@@ -1,0 +1,61 @@
+.shot {
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: hitEffect 1s forwards;
+}
+
+@keyframes hitEffect {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    25% {
+        box-shadow: 0 0 10px 10px rgba(255, 165, 117, 0.1), 
+                    0 0 10px 10px rgba(255, 164, 67, 0.1), 
+                    0 0 10px 10px rgba(255, 168, 27, 0.1), 
+                    0 0 10px 10px rgba(255, 222, 90, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 20px 20px rgba(255, 189, 108, 0.2), 
+                    0 0 20px 20px rgba(255, 196, 60, 0.2), 
+                    0 0 20px 20px rgba(255, 158, 13, 0.2), 
+                    0 0 20px 20px rgba(255, 177, 33, 0.2);
+    }
+    75% {
+        box-shadow: 0 0 30px 30px rgba(160, 111, 46, 0.1), 
+                    0 0 30px 30px rgba(135, 90, 17, 0.1), 
+                    0 0 30px 30px rgba(113, 85, 1, 0.1), 
+                    0 0 30px 30px rgba(87, 60, 0, 0.1);
+    }
+    100% {
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0);
+    }
+}
+
+.shot::after {
+    content: 'x';
+    position: absolute;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5rem;
+    z-index: 200;
+}
+
+.fail {
+    background-color: rgb(120, 194, 255) !important;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: hitEffect 1s forwards;
+}
+
+.borders {
+    background-color: rgb(0, 0, 12) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

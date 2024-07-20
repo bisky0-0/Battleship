@@ -1,0 +1,5 @@
+#header, #main, #footer {
+    width: 100%;
+    padding: 10px;
+    @include flex(row, center);
+}

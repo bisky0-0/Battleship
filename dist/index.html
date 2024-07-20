@@ -14,20 +14,29 @@
     </header>
     <main id="main">
         <section id="battel-fields">
+            <audio id="shot-sound" src="./assets/95749__cgeffex__ship-artillery-blast-classic.wav"></audio>
+            <audio src="./assets/382310__mountain_man__game-over-arcade.wav" id="over-sound"></audio>
             <div class="field" id="human">
                 <div class="grid" id="human-grid"></div>
                 <p class="name">You</p>
+                <button id="randomise">RANDOM SHIPS</button>
             </div>
             <div class="field" id="bot">
                 <div class="grid" id="bot-grid"></div>
-                <p class="namee">Enemy</p>
+                <p class="name">Enemy</p>
             </div>
         </section>
-        <button id="play">Play</button>
+        <div id="winner-card" class="winner-card">
+            <h1 id="winner-h1"></h1>
+            <button id="winner-card-btn">Play Again</button>
+        </div>
+        <button id="play">RESTART</button>
+
+        <div class="winner-card" id="winner-card"></div>
     </main>
     <footer id="footer">
         built by<a href="https://github.com/bisky0-0/Battleship"> ...bisky...
-        </a> &copy;
+        </a>&copy;
         <script>document.write(new Date().getFullYear())</script>
     </footer>
     <script src="./main.js"></script>

@@ -1,0 +1,14 @@
+@import 'devices';
+
+#header {
+    @include flex(row, center);
+
+    #h1 {
+        @include device(599px) {   
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        color: #fff;
+    }
+}
