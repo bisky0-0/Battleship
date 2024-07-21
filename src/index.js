@@ -92,6 +92,7 @@ export function resetGame() {
     });
 
     userTurn = true;
+    started = false;
 }
 
 function clearClasses(grid) {
